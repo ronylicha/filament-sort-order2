@@ -23,8 +23,8 @@ trait SortOrder
     public function getContext(Model $model)
     {
         switch ($model->getTable()) {
-            case "menu_produits":
-                return array("menu_categorie_id",$model->menu_categorie_id);
+            case "leads":
+                return array("user_id",$model->user_id);
 
                 break;
 
